@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VILUAR | Inteligência Comercial & Vendas B2B</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00f2ff; /* Azul Neon Tech */
+            --bg: #0a0a0a; /* Fundo Dark */
+            --text: #ffffff;
+            --accent: #7000ff; /* Roxo Cyberpunk */
+            --card-bg: #151515;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+        h1, h2, h3 { font-family: 'Orbitron', sans-serif; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; }
+        
+        .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+        
+        /* Header */
+        header { padding: 100px 20px; text-align: center; background: linear-gradient(180deg, #111 0%, #0a0a0a 100%); border-bottom: 2px solid var(--primary); }
+        header h1 { font-size: 3.5rem; margin: 0; letter-spacing: 8px; text-shadow: 0 0 15px var(--primary); }
+        header p { font-size: 1.2rem; color: #888; margin-top: 10px; }
+
+        /* Manifesto */
+        .manifesto { text-align: center; margin-bottom: 100px; margin-top: 60px; }
+        .manifesto h2 { font-size: 2.2rem; margin-bottom: 30px; }
+        .manifesto p { font-size: 1.2rem; max-width: 850px; margin: 20px auto; color: #ddd; }
+        .highlight { color: var(--primary); font-weight: bold; border-bottom: 1px solid var(--primary); }
+
+        /* Planos */
+        .plans-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; margin-top: 50px; }
+        .plan-card { border: 1px solid #333; padding: 35px; border-radius: 15px; background: var(--card-bg); transition: 0.4s; position: relative; display: flex; flex-direction: column; }
+        .plan-card:hover { border-color: var(--primary); transform: translateY(-10px); box-shadow: 0 0 30px rgba(0, 242, 255, 0.2); }
+        .plan-card h3 { font-size: 1.6rem; margin-top: 0; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .plan-card ul { padding: 0; list-style: none; font-size: 0.95rem; color: #bbb; flex-grow: 1; }
+        .plan-card ul li { margin-bottom: 12px; }
+        .plan-card ul li::before { content: "› "; color: var(--primary); font-weight: bold; }
+
+        .btn { display: block; text-align: center; background: var(--primary); color: #000; padding: 15px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 25px; text-transform: uppercase; transition: 0.3s; }
+        .btn:hover { background: #fff; box-shadow: 0 0 20px var(--primary); transform: scale(1.02); }
+        .btn-apex { background: var(--accent); color: white; }
+        .btn-apex:hover { box-shadow: 0 0 20px var(--accent); }
+
+        /* FAQ */
+        .faq { margin-top: 100px; padding-top: 50px; border-top: 1px solid #222; }
+        .faq h2 { text-align: center; margin-bottom: 50px; }
+        .faq-item { background: #111; padding: 25px; border-radius: 10px; margin-bottom: 15px; border-left: 5px solid var(--primary); }
+        .faq-item b { display: block; margin-bottom: 10px; color: var(--primary); font-size: 1.1rem; }
+
+        /* Mapa da Vitória */
+        .timeline { margin-top: 100px; text-align: center; }
+        .timeline h2 { margin-bottom: 40px; }
+        .step { display: inline-block; width: 22%; min-width: 200px; vertical-align: top; padding: 20px; }
+        .step-num { font-family: 'Orbitron'; font-size: 2rem; color: var(--primary); opacity: 0.5; }
+
+        /* Footer */
+        footer { text-align: center; padding: 120px 20px; border-top: 1px solid #222; margin-top: 100px; background: #050505; }
+        .phrase { font-size: 2rem; font-weight: bold; font-family: 'Orbitron', sans-serif; margin-bottom: 40px; color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; letter-spacing: 4px; }
+            .phrase { font-size: 1.4rem; }
+            .step { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>VILUAR</h1>
+    <p>Aceleradora de Vendas B2B & Inteligência Comercial</p>
+</header>
+
+<div class="container">
+    
+    <section class="manifesto">
+        <h2>Vendas não são sorte, são processo.</h2>
+        <p>A VILUAR nasceu para eliminar o amadorismo e a dependência de "vendedores estrela". 
+        Acreditamos que uma empresa que visa crescer não pode parar no tempo por falta de braço comercial.</p>
+        <p><span class="highlight">O CEO não nasceu para carregar o piano sozinho.</span></p>
+        <p>Nós transformamos talento individual em performance sistêmica. Devolvemos o seu tempo para você voltar a liderar seu império, enquanto nós mantemos a máquina de vendas girando.</p>
+    </section>
+
+    <div class="plans-grid">
+        <div class="plan-card">
+            <h3>Matilha</h3>
+            <ul>
+                <li>Time de Prospecção Especializado</li>
+                <li>Mapeamento Inteligente (ICP)</li>
+                <li>Engajamento de Valor (Zero Spam)</li>
+                <li>Entrega de Oportunidades Reais</li>
+            </ul>
+            <a href="https://wa.me/5511993606619" class="btn">Solicitar Matilha</a>
+        </div>
+
+        <div class="plan-card">
+            <h3>Hunter</h3>
+            <ul>
+                <li>Operação Comercial Completa</li>
+                <li>Venda Consultiva (Trusted Advisor)</li>
+                <li>Gestão Ativa de Pipeline</li>
+                <li>Foco Total em ROI e Fechamento</li>
+            </ul>
+            <a href="https://wa.me/5511993606619" class="btn">Seja um Hunter</a>
+        </div>
+
+        <div class="plan-card">
+            <h3>Alpha</h3>
+            <ul>
+                <li>Consultoria Estratégica Enterprise</li>
+                <li>Expansão de Mercado e Domínio</li>
+                <li>Apoio Tecnológico da <strong>Helena</strong></li>
+                <li>Parceria de Elite Full-Stack</li>
+            </ul>
+            <a href="https://wa.me/5511993606619" class="btn">Nível Alpha</a>
+        </div>
+
+        <div class="plan-card" style="border-color: var(--accent);">
+            <h3>APEX</h3>
+            <ul>
+                <li>Arquitetura Comercial do Zero</li>
+                <li>Projetos de Alto Impacto</li>
+                <li>Integração e Consultoria Sob Medida</li>
+                <li>O Topo da Estratégia Comercial</li>
+            </ul>
+            <a href="https://wa.me/5511993606619" class="btn btn-apex">Projeto APEX</a>
+        </div>
+    </div>
+
+    <section class="timeline">
+        <h2>Mapa da Vitória</h2>
+        <div class="step"><div class="step-num">01</div><b>Briefing</b><p>Reconhecimento de terreno e definição de alvo.</p></div>
+        <div class="step"><div class="step-num">02</div><b>Setup</b><p>Configuração da Helena e do time de elite.</p></div>
+        <div class="step"><div class="step-num">03</div><b>Operação</b><p>Invasão de mercado e geração de interesse.</p></div>
+        <div class="step"><div class="step-num">04</div><b>ROI</b><p>Extração de valor e contratos na mesa.</p></div>
+    </section>
+
+    <section class="faq">
+        <h2>FAQ de Elite</h2>
+        <div class="faq-item">
+            <b>A VILUAR serve para o meu negócio?</b>
+            Se você vende B2B e busca previsibilidade, sim. Nós abrimos as portas certas para você.
+        </div>
+        <div class="faq-item">
+            <b>Vou ter que gerenciar o time?</b>
+            Zero. A gestão comercial e tecnológica é nossa. O resultado e o tempo livre são seus.
+        </div>
+        <div class="faq-item">
+            <b>Qual a diferença para uma agência comum?</b>
+            Agências focam em ruído (cliques). A VILUAR foca em valor (negócios fechados).
+        </div>
+    </section>
+
+    <footer>
+        <div class="phrase">"Conexão sem valor não é negócio, é ruído."</div>
+        <a href="https://wa.me/5511993606619" class="btn" style="max-width: 450px; margin: auto; font-size: 1.1rem;">Falar com um Especialista agora</a>
+    </footer>
+</div>
+
+</body>
+</html>
